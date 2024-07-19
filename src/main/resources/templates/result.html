@@ -1,0 +1,20 @@
+<!--
+The result.html file is used as a view returned by the
+controller after the user submits the data.
+it displays the Id value and the message after the data
+is already persisted in the DynamoDB table.
+-->
+
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting started: Handling form submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'id: ' + ${greeting.id}" />
+<p th:text="'content: ' + ${greeting.body}" />
+<a href="/">Submit another message</a>
+</body>
+</html>
